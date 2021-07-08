@@ -14,7 +14,7 @@
 <body>
 <h1>Operation was successful</h1>
 <c:forEach items="${list}" var="employee" varStatus="status">
-    <h1>${lsit.length}</h1>
+    <h1>${status.index}</h1>
 </c:forEach>
 <a href="/form">form</a>
 </body>
