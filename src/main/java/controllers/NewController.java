@@ -28,6 +28,7 @@ public class NewController {
         list.add(employee);
 
         modelAndView.addObject("employee", employee);
+        modelAndView.addObject("size", list.size());
         return modelAndView;
     }
 

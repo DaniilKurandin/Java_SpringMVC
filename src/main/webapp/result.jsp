@@ -1,4 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <%--
   Created by IntelliJ IDEA.
   User: kuran
@@ -13,9 +14,11 @@
 </head>
 <body>
 <h1>Operation was successful</h1>
-<c:forEach items="${list}" var="employee" varStatus="status">
-    <h1>${status.index}</h1>
+<c:forEach items="${lsit}" var="employee" varStatus="status">
+    <c:out value="${status.index}"/>
 </c:forEach>
+<br>
+<h2>Number of records: ${size}</h2>
 <a href="/form">form</a>
 </body>
 </html>
